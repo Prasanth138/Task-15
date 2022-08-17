@@ -74,7 +74,7 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle, handleSidebar,handleOpen,han
           onClick={handleOpen}
         >
           <i className="fas fa-fw fa-cog" style={{ marginRight: margin }}></i>
-          <span>Components</span>
+          <span>Student Database</span>
         </a>
         <Collapse in={open}>
         <div
@@ -85,14 +85,14 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle, handleSidebar,handleOpen,han
         >
           <div className="bg-white py-2 collapse-inner rounded">
             <h6 className="collapse-header">Custom Components:</h6>
-            <Link to="/buttons" style={{ textDecoration: 'none' }}>
+            <Link to="/students" style={{ textDecoration: 'none' }}>
               <a className="collapse-item" href="buttons.html">
-                Buttons
+                Student
               </a>
             </Link>
-            <Link to="/cards" style={{ textDecoration: 'none' }}>
-              <a className="collapse-item" href="cards.html">
-                Cards
+            <Link to="/students/AddStudent" style={{ textDecoration: 'none' }}>
+              <a className="collapse-item" href="buttons.html">
+                Add Student
               </a>
             </Link>
           </div>
@@ -115,7 +115,7 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle, handleSidebar,handleOpen,han
             className="fas fa-fw fa-wrench"
             style={{ marginRight: margin }}
           ></i>
-          <span>Utilities</span>
+          <span>Teacher Database</span>
         </a>
         <Collapse in={open1}>
         <div
@@ -126,31 +126,20 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle, handleSidebar,handleOpen,han
         >
           <div className="bg-white py-2 collapse-inner rounded">
             <h6 className="collapse-header">Custom Utilities:</h6>
-            <Link to="/colors" style={{ textDecoration: 'none' }}>
+            <Link to="/teachers" style={{ textDecoration: 'none' }}>
               <a className="collapse-item" href="utilities-color.html">
-                Colors
+                Teacher
               </a>
             </Link>
-            <Link to="/borders" style={{ textDecoration: 'none' }}>
-              <a className="collapse-item" href="utilities-border.html">
-                Borders
-              </a>
-            </Link>
-            <Link to="/animations" style={{ textDecoration: 'none' }}>
-              <a className="collapse-item" href="utilities-animation.html">
-                Animations
-              </a>
-            </Link>
-            <Link to="/others" style={{ textDecoration: 'none' }}>
-              <a className="collapse-item" href="utilities-other.html">
-                Other
+            <Link to="/teachers/AddTeacher" style={{ textDecoration: 'none' }}>
+              <a className="collapse-item" href="utilities-color.html">
+                Add Teacher
               </a>
             </Link>
           </div>
         </div>
         </Collapse>
       </li>
-
       {/* <!-- Divider --> */}
       <hr className="sidebar-divider" />
 

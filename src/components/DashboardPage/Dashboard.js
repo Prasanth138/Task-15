@@ -4,9 +4,9 @@ import ScrollToTop from '../ScrollToTop'
 import Sidebar from '../Sidebars/Sidebar'
 import Footer from '../Footer'
 import Heading from './Heading'
-import Row1 from './Row1'
+// import Row1 from './Row1'
 import Row2 from './Row2'
-import Row3 from './Row3'
+// import Row3 from './Row3'
 import LogoutModal from '../LogoutModal'
 import Collapse from 'react-bootstrap/Collapse';
 
@@ -47,9 +47,9 @@ const Dashboard = ({ handleOpen,handleOpen1,handleOpen2,open,open1,open2,setOpen
             {/* Begin Page Content */}
             <div className="container-fluid">
               <Heading />
-              <Row1 />
+              {/* <Row1 /> */}
               <Row2 />
-              <Row3 />
+              {/* <Row3 /> */}
             </div>
             {/* <!-- /.container-fluid --> */}
           </div>
